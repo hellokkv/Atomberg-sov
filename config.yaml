@@ -1,0 +1,35 @@
+project_name: "Smart Fan Share-of-Voice (SoV) AI Agent"
+default_top_n: 200   # YouTube will cap at 200, Google at 100
+
+platforms:
+  youtube:
+    api_key_env: "YOUTUBE_API_KEY"
+  google_cse:
+    api_key_env: "GOOGLE_CSE_API_KEY"
+    engine_id_env: "GOOGLE_CSE_ENGINE_ID"
+
+keywords:
+  seeds:
+    - "smart fan"
+
+brands:
+  primary:
+    - "Atomberg"
+    - "Atomberg Renesa"
+    - "Atomberg Efficio"
+    - "Atomberg Studio"
+  competitors:
+    - "Orient"
+    - "Havells"
+    - "Usha"
+    - "Crompton"
+    - "Luminous"
+    - "Bajaj"
+    - "Polycab"
+    - "V-Guard"
+    - "Anchor"
+    - "Panasonic"
+
+output:
+  data_dir: "data"
+  out_dir: "out"
